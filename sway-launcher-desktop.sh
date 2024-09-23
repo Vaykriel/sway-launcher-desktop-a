@@ -12,7 +12,7 @@ trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
 IFS=$'\n\t'
 DEL=$'\34'
 
-FZF_COMMAND="${FZF_COMMAND:=fzf}"
+FZF_COMMAND="${FZF_COMMAND:=fzf -i}"
 TERMINAL_COMMAND="${TERMINAL_COMMAND:="$TERMINAL -e"}"
 GLYPH_COMMAND="${GLYPH_COMMAND-  }"
 GLYPH_DESKTOP="${GLYPH_DESKTOP-  }"
